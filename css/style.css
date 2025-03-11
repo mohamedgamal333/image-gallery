@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.search{
+    position: relative;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.search img{
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: auto;
+    z-index: 2 ;
+}
+.content h1{
+    font-size: 2.5rem;
+font-weight: 600;
+    color: white;
+    margin: 20px 0; 
+}
+.content p{
+    
+    font-size: 1rem;
+    color: white  ;   
+    margin-top: 8px;
+}
+
+.search .search-box{
+    height: 50px;
+    margin: 40px 0;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    width: 80%;
+    max-width: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 25px;
+    padding: 0 20px;
+}
+.search-box input{
+    
+    width: 100%;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    padding: 0 20px;
+    font-size: 1.2rem;
+}
+.Gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+.Gallery .images{
+    gap: 20px;
+    
+   columns: 3 340px;
+    
+}
+.Gallery .card{
+    list-style: none;
+    margin-bottom: 14px;
+    border-radius: 4px;
+}
+.images img{
+    width: 100%;
+   
+}
+input , button ,i{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.Gallery .load-more{
+    margin-top: 40px;
+    font-size: 1.2rem;
+    background-color: #8a6cff;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
