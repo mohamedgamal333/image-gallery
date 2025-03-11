@@ -84,6 +84,8 @@ font-weight: 600;
     
 }
 .Gallery .card{
+    position: relative;
+    
     list-style: none;
     margin-bottom: 14px;
     border-radius: 4px;
@@ -103,7 +105,118 @@ input , button ,i{
     background-color: #8a6cff;
     color: white;
     cursor: pointer;
+    width: 100%;
     padding: 10px 20px;
     border-radius: 5px;
     margin-bottom: 20px;
+}
+.images .card .details{
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    position: absolute;
+    bottom: -100%;
+    overflow: hidden;
+    transition: 0.1s bottom ease;
+    width: 100%;
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    color: white;  
+}
+.images .card:hover .details{
+    bottom: 0px;
+
+    
+}
+.images .card .details .photographer{
+    width: 100%;
+
+
+
+}
+.images .card .details .photographer i{
+    padding: 10px;
+}
+.images .card .details  button i{
+cursor: pointer;
+    background-color: #fff;
+    padding: 10px;
+}
+.light-box{
+    position: fixed;
+    z-index: 5;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.65);
+}
+.light-box .light-box-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    max-width: 850px;
+    transform: translate(-50%, -50%);
+    background: white;
+    border-radius: 5px;
+    padding: 20px;
+    
+}
+.light-box .light-box-content header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+header .photographer i{
+    padding: 10px;
+    font-size: 1.7rem;
+}
+header .photographer{
+    color: #333;
+}
+header .photographer span{
+   
+    font-size: 1.3rem;
+
+}
+
+.light-box-content .preview-img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:25px;
+}
+.light-box-content .preview-img .img{
+   max-width: 90vh;
+   max-height: 65vh;
+}
+.preview-img .img img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+header .buttons i{
+    width:40px;
+    height: 40px;
+    display: inline-block;
+    font-size: 1.2rem;
+    background-color: #8a6cff;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    line-height: 40px;
+    
+    
+
+}
+header .buttons i:last-child{
+
+    margin-left: 10px;
+    background-color:#6c757d
+  
+    
+
 }
